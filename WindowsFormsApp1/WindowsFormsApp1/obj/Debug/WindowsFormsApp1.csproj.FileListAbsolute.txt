@@ -1,0 +1,9 @@
+C:\Users\ISABELLA MANJARRES\OneDrive\Escritorio\Puzzle\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\ISABELLA MANJARRES\OneDrive\Escritorio\Puzzle\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\ISABELLA MANJARRES\OneDrive\Escritorio\Puzzle\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\ISABELLA MANJARRES\OneDrive\Escritorio\Puzzle\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\ISABELLA MANJARRES\OneDrive\Escritorio\Puzzle\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\ISABELLA MANJARRES\OneDrive\Escritorio\Puzzle\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\ISABELLA MANJARRES\OneDrive\Escritorio\Puzzle\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\ISABELLA MANJARRES\OneDrive\Escritorio\Puzzle\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\ISABELLA MANJARRES\OneDrive\Escritorio\Puzzle\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
