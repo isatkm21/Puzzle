@@ -16,8 +16,31 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
+            b[0] = b1;
+            b[1] = b2;
+            b[2] = b3;
+            b[3] = b4;
+            b[4] = b5; 
+            b[5] = b6;
+            b[6] = b7;
+            b[7] = b8;
+            b[8] = b9;
+            b[9] = b10;
+            b[10] = b11;
+            b[11] = b12;
+            b[12] = b13;
+            b[13] = b14;
+            b[14] = b15;
+            b[15] = b16;
+            iniciaBoton();
         }
-
+        public void iniciaBoton()
+        {
+            for (int i = 0; i < 16; i++)
+            {
+                b[i].Text = (i + 1) + "";
+            }
+        }
         private void button1_Click(object sender, EventArgs e)
         {
 
