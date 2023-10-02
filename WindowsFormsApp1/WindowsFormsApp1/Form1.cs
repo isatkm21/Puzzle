@@ -207,6 +207,7 @@ namespace WindowsFormsApp1
             this.b8.TabIndex = 7;
             this.b8.Text = "8";
             this.b8.UseVisualStyleBackColor = false;
+            this.b8.Click += new System.EventHandler(this.b8_Click);
             // 
             // b7
             // 
@@ -219,6 +220,7 @@ namespace WindowsFormsApp1
             this.b7.TabIndex = 6;
             this.b7.Text = "7";
             this.b7.UseVisualStyleBackColor = false;
+            this.b7.Click += new System.EventHandler(this.b7_Click);
             // 
             // b6
             // 
@@ -255,6 +257,7 @@ namespace WindowsFormsApp1
             this.b4.TabIndex = 3;
             this.b4.Text = "4";
             this.b4.UseVisualStyleBackColor = false;
+            this.b4.Click += new System.EventHandler(this.b4_Click);
             // 
             // b3
             // 
@@ -267,6 +270,7 @@ namespace WindowsFormsApp1
             this.b3.TabIndex = 2;
             this.b3.Text = "3";
             this.b3.UseVisualStyleBackColor = false;
+            this.b3.Click += new System.EventHandler(this.b3_Click);
             // 
             // b2
             // 
@@ -371,6 +375,79 @@ namespace WindowsFormsApp1
             {
                 b16.Text = b12.Text;
                 b12.Text = "";
+            }
+        }
+
+        private void b8_Click(object sender, EventArgs e)
+        {
+            if (b12.Text.Equals(""))
+            {
+                b12.Text = b8.Text;
+                b8.Text = "";
+            }
+            if (b7.Text.Equals(""))
+            {
+                b7.Text = b8.Text;
+                b8.Text = "";
+            }
+
+           
+        }
+
+        private void b7_Click(object sender, EventArgs e)
+        {
+            if (b8.Text.Equals(""))
+            {
+                b8.Text = b7.Text;
+                b7.Text = "";
+            }
+            if (b6.Text.Equals(""))
+            {
+                b6.Text = b7.Text;
+                b7.Text = "";
+            }
+            if (b3.Text.Equals(""))
+            {
+                b3.Text = b7.Text;
+                b7.Text = "";
+            }
+            if (b11.Text.Equals(""))
+            {
+                b11.Text = b7.Text;
+                b7.Text = "";
+            }
+        }
+
+        private void b4_Click(object sender, EventArgs e)
+        {
+            if (b3.Text.Equals(""))
+            {
+                b3.Text = b4.Text;
+                b4.Text = "";
+            }
+            if (b8.Text.Equals(""))
+            {
+                b8.Text = b4.Text;
+                b4.Text = "";
+            }
+        }
+
+        private void b3_Click(object sender, EventArgs e)
+        {
+            if (b7.Text.Equals(""))
+            {
+                b7.Text = b3.Text;
+                b3.Text = "";
+            }
+            if (b4.Text.Equals(""))
+            {
+                b4.Text = b3.Text;
+                b3.Text = "";
+            }
+            if (b2.Text.Equals(""))
+            {
+                b2.Text = b3.Text;
+                b3.Text = "";
             }
         }
     }
