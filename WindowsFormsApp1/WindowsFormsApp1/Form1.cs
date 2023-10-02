@@ -32,16 +32,16 @@ namespace WindowsFormsApp1
             b[13] = b14;
             b[14] = b15;
             b[15] = b16;
-            iniciaBoton();
+            aleatorio();
         }
-        public void iniciaBoton()
+        public void iniciaBoton(int[]a)
         {
             for (int i = 0; i < 16; i++)
             {
-                if (i==15)
+                if (a[i] ==16)
                     b[i].Text = "";
                 else
-                    b[i].Text = (i + 1) + "";
+                    b[i].Text = (a[i]) + "";
             }
         }
         private void button1_Click(object sender, EventArgs e)
@@ -315,6 +315,38 @@ namespace WindowsFormsApp1
 
         }
 
+        public void aleatorio()
+        {
+            int ale=new Random().Next(1,4);
+            switch(ale)
+            {
+                case 1:
+                    int [] c1 = { 9, 7, 16, 5, 3, 1, 2, 4, 6, 8, 10, 12, 14, 13, 15, 11 };
+                    iniciaBoton(c1);
+                    break;
+                case 2:
+                    int[] c2 = { 11, 15, 3, 2, 5, 7, 16, 9, 6, 1, 4, 8, 12, 13, 10, 14 };
+                    iniciaBoton(c2);
+                    break;
+                case 3:
+                    int[] c3 = { 1, 5, 2, 4, 16, 6, 3, 8, 10, 12, 11, 15, 13, 14,7,9};
+                    iniciaBoton(c3);
+                    break;
+
+                case 4:
+                    int[] c4 = { 11, 9,14,5,7,3,1,4,2,8,6,10,12,15,16,13};
+                    iniciaBoton(c4);
+                    break;
+            }       
+        }
+        
+        public void vaildar() 
+        {
+            if (b1.Text.Equals(1) && b2.Text.Equals(2) && b3.Text.Equals(3) && b4.Text.Equals(4) && b5.Text.Equals(5) && b6.Text.Equals(6) && b7.Text.Equals(7) && b8.Text.Equals(8) && b9.Text.Equals(9) && b10.Text.Equals(10) && b11.Text.Equals(11) && b12.Text.Equals(12) && b13.Text.Equals(13) && b14.Text.Equals(14) && b15.Text.Equals(15) && b16.Text.Equals(16)) 
+            {
+                MessageBox.Show("+++Ganaste+++");
+            }
+        }
         private void b15_Click(object sender, EventArgs e)
         {
             if (b14.Text.Equals(""))
@@ -332,7 +364,9 @@ namespace WindowsFormsApp1
                 b16.Text = b15.Text;
                 b15.Text = "";
             }
+            vaildar();
         }
+        
 
         private void b16_Click(object sender, EventArgs e)
         {
@@ -346,8 +380,9 @@ namespace WindowsFormsApp1
                 b15.Text = b16.Text;
                 b16.Text = "";
             }
+            vaildar();
         }
-
+        
         private void b11_Click(object sender, EventArgs e)
         {
             if (b10.Text.Equals(""))
@@ -370,8 +405,9 @@ namespace WindowsFormsApp1
                 b15.Text = b11.Text;
                 b11.Text = "";
             }
+            vaildar();
         }
-
+    
         private void b12_Click(object sender, EventArgs e)
         {
             if (b11.Text.Equals(""))
@@ -389,8 +425,8 @@ namespace WindowsFormsApp1
                 b8.Text = b12.Text;
                 b12.Text = "";
             }
+            vaildar();
         }
-
         private void b8_Click(object sender, EventArgs e)
         {
             if (b12.Text.Equals(""))
@@ -408,9 +444,8 @@ namespace WindowsFormsApp1
                 b4.Text = b8.Text;
                 b8.Text = "";
             }
-
+            vaildar();
         }
-
         private void b7_Click(object sender, EventArgs e)
         {
             if (b8.Text.Equals(""))
@@ -433,8 +468,9 @@ namespace WindowsFormsApp1
                 b11.Text = b7.Text;
                 b7.Text = "";
             }
+            vaildar();
         }
-
+        
         private void b4_Click(object sender, EventArgs e)
         {
             if (b3.Text.Equals(""))
@@ -447,7 +483,9 @@ namespace WindowsFormsApp1
                 b8.Text = b4.Text;
                 b4.Text = "";
             }
+            vaildar();
         }
+        
 
         private void b3_Click(object sender, EventArgs e)
         {
@@ -466,6 +504,7 @@ namespace WindowsFormsApp1
                 b2.Text = b3.Text;
                 b3.Text = "";
             }
+            vaildar();
         }
 
         private void b2_Click(object sender, EventArgs e)
@@ -485,6 +524,7 @@ namespace WindowsFormsApp1
                 b6.Text = b2.Text;
                 b2.Text = "";
             }
+            vaildar();
         }
 
         private void b1_Click(object sender, EventArgs e)
@@ -499,6 +539,7 @@ namespace WindowsFormsApp1
                 b5.Text = b1.Text;
                 b1.Text = "";
             }
+            vaildar();
         }
 
         private void b5_Click(object sender, EventArgs e)
@@ -518,7 +559,7 @@ namespace WindowsFormsApp1
                 b9.Text = b5.Text;
                 b5.Text = "";
             }
-
+            vaildar();
         }
 
         private void b6_Click(object sender, EventArgs e)
@@ -543,6 +584,7 @@ namespace WindowsFormsApp1
                 b10.Text = b6.Text;
                 b6.Text = "";
             }
+            vaildar();
         }
 
         private void b9_Click(object sender, EventArgs e)
@@ -562,6 +604,7 @@ namespace WindowsFormsApp1
                 b13.Text = b9.Text;
                 b9.Text = "";
             }
+            vaildar();
         }
 
         private void b10_Click(object sender, EventArgs e)
@@ -586,6 +629,7 @@ namespace WindowsFormsApp1
                 b11.Text = b10.Text;
                 b10.Text = "";
             }
+            vaildar();
 
         }
 
@@ -601,6 +645,7 @@ namespace WindowsFormsApp1
                 b14.Text = b13.Text;
                 b13.Text = "";
             }
+            vaildar();
         }
 
         private void b14_Click(object sender, EventArgs e)
@@ -621,5 +666,6 @@ namespace WindowsFormsApp1
                 b14.Text = "";
             }
         }
+        
     }
 }
