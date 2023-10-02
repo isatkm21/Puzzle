@@ -38,7 +38,10 @@ namespace WindowsFormsApp1
         {
             for (int i = 0; i < 16; i++)
             {
-                b[i].Text = (i + 1) + "";
+                if (i==15)
+                    b[i].Text = "";
+                else
+                    b[i].Text = (i + 1) + "";
             }
         }
         private void button1_Click(object sender, EventArgs e)
