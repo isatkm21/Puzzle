@@ -384,9 +384,9 @@ namespace WindowsFormsApp1
                 b16.Text = b12.Text;
                 b12.Text = "";
             }
-            if (b4.Text.Equals(""))
+            if (b8.Text.Equals(""))
             {
-                b4.Text = b12.Text;
+                b8.Text = b12.Text;
                 b12.Text = "";
             }
         }
